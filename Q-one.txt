@@ -1,0 +1,100 @@
+Static Position:
+The static position is the default position of elements in the normal document flow.
+
+Example:-
+<style>
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+</style>
+
+<div class="box">
+  This is a static position element.
+</div>
+In the example above, the element with the class "box" has the default static position. It follows the normal flow of the document and is not affected by other position-related properties.
+
+Fixed Position:
+The fixed position positions an element relative to the viewport and keeps it fixed even when scrolling.
+Example:-
+<style>
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+  }
+</style>
+
+<div class="box">
+  This is a fixed position element.
+</div>
+In this example, the element with the class "box" is positioned 50 pixels from the top and left of the viewport. It stays fixed at this position even when the page is scrolled.
+
+Sticky Position:
+The sticky position is a hybrid between relative and fixed. It acts as a relative position until a specified threshold is reached, and then it becomes fixed.
+Example:-
+<style>
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: sticky;
+    top: 50px;
+  }
+</style>
+
+<div class="box">
+  This is a sticky position element.
+</div>
+In this example, the element with the class "box" has a sticky position with a top offset of 50 pixels. It behaves like a relative position until the user scrolls and reaches the threshold specified by the top offset, at which point it becomes fixed.
+
+Relative Position:
+The relative position positions an element relative to its normal position.
+Example:-
+<style>
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    left: 50px;
+    top: 50px;
+  }
+</style>
+
+<div class="box">
+  This is a relative position element.
+</div>
+In this example, the element with the class "box" is positioned 50 pixels down and 50 pixels to the right from its normal position. It retains its position in the normal flow but can be adjusted using the left and top properties.
+
+Absolute Position:
+The absolute position positions an element relative to its nearest positioned ancestor or the initial containing block.
+Example:-
+<style>
+  .container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+</style>
+
+<div class="container">
+  <div class="box">
+    This is an absolute position element.
+  </div>
+</div>
+In this example, the element with the class "box" is positioned 50 pixels down and 50 pixels to the right from its nearest positioned ancestor, which is the "container" div. The "container" div itself is set to a relative position to serve as a reference for the absolute position.

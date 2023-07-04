@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 220px 190px 190px;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "one two four"
+      "three three five"
+      "three three six";
+  }
+  
+  .one { grid-area: one;  }
+  
+  .two { grid-area: two; }
+  
+  .three { grid-area: three; }
+  
+  .four { grid-area: four; }
+  
+  .five { grid-area: five; }
+  
+  .six { grid-area: six; }
+  
+ 
+.one{
+    background-image: url("https://cdn.pixabay.com/photo/2023/07/02/07/20/brown-8101493_1280.jpg");
+    background-size: cover;
+}
+.two{
+    background-image: url("https://cdn.pixabay.com/photo/2023/07/02/07/20/star-of-bethlehem-8101490_1280.jpg");
+    background-size: cover;
+}
+.three{
+    background-image: url("https://cdn.pixabay.com/photo/2023/06/29/09/05/dolomites-8095996_1280.jpg");
+    background-size: cover;
+}
+.four{
+    background-image: url("https://cdn.pixabay.com/photo/2023/06/29/19/10/bird-8096953_1280.jpg");
+    background-size: cover;
+}
+.five{
+    background-image: url("https://cdn.pixabay.com/photo/2023/06/30/14/07/flower-8098422_1280.jpg");
+    background-size: cover;
+}
+.six{
+    background-image: url("https://cdn.pixabay.com/photo/2023/06/30/13/49/red-clover-8098398_1280.jpg");
+    background-size: cover;
+}
